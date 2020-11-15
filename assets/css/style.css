@@ -112,7 +112,23 @@
     30.1. Price button
 
 ********************************************************/
-
+/*******************************************************/
+#web_desc {
+	display: none;
+}
+#digital_desc {
+	display: none;
+}
+#mobile_desc {
+	display: none;
+}
+#design_desc {
+	display: none;
+}
+#iot_desc {
+	display: none;
+}
+/******************************************************/
 /*--------------------------------------------------------------
 1. Basics
 --------------------------------------------------------------*/
@@ -1306,6 +1322,17 @@ h6 {
 	
 }
 
+.brandz {
+	padding-left: 80px;
+}
+
+@media only screen and (max-width: 650px) {
+	.brandz {
+		padding-left: 0;
+		padding-top: 180px;
+	}
+}
+
 @media only screen and (max-width: 549px) {
 	
 	.container {
@@ -1779,7 +1806,7 @@ body.in .loading {
 
 /* 4.1. Header logo */
 .logo {
-	width: 100px;
+	width: 300px;
 	margin: 20px 0 0 40px;
 }
 
@@ -2621,7 +2648,7 @@ body.out .nav-container.active .nav-menu:before {
 }
 
 .nav-link.done {
-	pointer-events: none;
+	/* pointer-events: none; */
 }
 
 li:nth-last-child(1) .nav-link.done .nav-btn,

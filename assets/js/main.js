@@ -454,3 +454,28 @@ $(function() {
 	});
 
 });
+
+function webFunction() {
+	document.getElementById("services").style.display = "none";
+	document.getElementById("web_desc").style.display = "block";
+}
+
+function digitalFunction() {
+	document.getElementById("services").style.display = "none";
+	document.getElementById("digital_desc").style.display = "block";
+}
+
+function mobileFunction() {
+	document.getElementById("services").style.display = "none";
+	document.getElementById("mobile_desc").style.display = "block";
+}
+
+function designFunction() {
+	document.getElementById("services").style.display = "none";
+	document.getElementById("design_desc").style.display = "block";
+}
+
+function iotFunction() {
+	document.getElementById("services").style.display = "none";
+	document.getElementById("iot_desc").style.display = "block";
+}
