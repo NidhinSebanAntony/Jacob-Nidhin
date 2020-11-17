@@ -458,6 +458,7 @@ $(function() {
 function webFunction() {
 	document.getElementById("services").style.display = "none";
 	document.getElementById("web_desc").style.display = "block";
+	// window.location.href = 'services.html#what'
 }
 
 function digitalFunction() {
