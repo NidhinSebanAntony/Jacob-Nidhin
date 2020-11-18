@@ -456,27 +456,170 @@ $(function() {
 });
 
 function webFunction() {
-	document.getElementById("services").style.display = "none";
-	document.getElementById("web_desc").style.display = "block";
-	// window.location.href = 'services.html#what'
+	
+	document.getElementById("web_short").style.display = 'none';
+	document.getElementById("digital_short").style.display = 'none';
+	document.getElementById("mobile_short").style.display = 'none';
+	document.getElementById("design_short").style.display = 'none';
+	document.getElementById("iot_short").style.display = 'none';
+	document.getElementById("web_long").style.display = 'block';
+	document.getElementById("digital_long").style.display = 'none';
+	document.getElementById("mobile_long").style.display = 'none';
+	document.getElementById("design_long").style.display = 'none';
+	document.getElementById("web_card").style.display = 'block';
+	document.getElementById("digital_card").style.display = 'block';
+	document.getElementById("mobile_card").style.display = 'block';
+	document.getElementById("design_card").style.display = 'block';
+	document.getElementById("web_icon_bg").style.background = '#ef0d33';
+	document.getElementById("digital_icon_bg").style.background = '#262626';
+	document.getElementById("mobile_icon_bg").style.background = '#262626';
+	document.getElementById("design_icon_bg").style.background = '#262626';
+	
 }
 
 function digitalFunction() {
-	document.getElementById("services").style.display = "none";
-	document.getElementById("digital_desc").style.display = "block";
+	document.getElementById("web_short").style.display = 'none';
+	document.getElementById("digital_short").style.display = 'none';
+	document.getElementById("mobile_short").style.display = 'none';
+	document.getElementById("design_short").style.display = 'none';
+	document.getElementById("iot_short").style.display = 'none';
+	document.getElementById("web_long").style.display = 'none';
+	document.getElementById("digital_long").style.display = 'block';
+	document.getElementById("mobile_long").style.display = 'none';
+	document.getElementById("design_long").style.display = 'none';
+	document.getElementById("web_card").style.display = 'block';
+	document.getElementById("digital_card").style.display = 'block';
+	document.getElementById("mobile_card").style.display = 'block';
+	document.getElementById("design_card").style.display = 'block';
+	document.getElementById("digital_icon_bg").style.background = '#ef0d33';
+	document.getElementById("web_icon_bg").style.background = '#262626';
+	document.getElementById("mobile_icon_bg").style.background = '#262626';
+	document.getElementById("design_icon_bg").style.background = '#262626';
+
 }
 
 function mobileFunction() {
-	document.getElementById("services").style.display = "none";
-	document.getElementById("mobile_desc").style.display = "block";
+	document.getElementById("web_short").style.display = 'none';
+	document.getElementById("digital_short").style.display = 'none';
+	document.getElementById("mobile_short").style.display = 'none';
+	document.getElementById("design_short").style.display = 'none';
+	document.getElementById("iot_short").style.display = 'none';
+	document.getElementById("web_long").style.display = 'none';
+	document.getElementById("digital_long").style.display = 'none';
+	document.getElementById("mobile_long").style.display = 'block';
+	document.getElementById("design_long").style.display = 'none';
+	document.getElementById("web_card").style.display = 'block';
+	document.getElementById("digital_card").style.display = 'block';
+	document.getElementById("mobile_card").style.display = 'block';
+	document.getElementById("design_card").style.display = 'block';
+	document.getElementById("mobile_icon_bg").style.background = '#ef0d33';
+	document.getElementById("digital_icon_bg").style.background = '#262626';
+	document.getElementById("web_icon_bg").style.background = '#262626';
+	document.getElementById("design_icon_bg").style.background = '#262626';
+
 }
 
 function designFunction() {
-	document.getElementById("services").style.display = "none";
-	document.getElementById("design_desc").style.display = "block";
+	document.getElementById("web_short").style.display = 'none';
+	document.getElementById("digital_short").style.display = 'none';
+	document.getElementById("mobile_short").style.display = 'none';
+	document.getElementById("design_short").style.display = 'none';
+	document.getElementById("iot_short").style.display = 'none';
+	document.getElementById("web_long").style.display = 'none';
+	document.getElementById("digital_long").style.display = 'none';
+	document.getElementById("mobile_long").style.display = 'none';
+	document.getElementById("design_long").style.display = 'block';
+	document.getElementById("web_card").style.display = 'block';
+	document.getElementById("digital_card").style.display = 'block';
+	document.getElementById("mobile_card").style.display = 'block';
+	document.getElementById("design_card").style.display = 'block';
+	document.getElementById("design_icon_bg").style.background = '#ef0d33';
+	document.getElementById("digital_icon_bg").style.background = '#262626';
+	document.getElementById("mobile_icon_bg").style.background = '#262626';
+	document.getElementById("web_icon_bg").style.background = '#262626';
 }
 
-function iotFunction() {
-	document.getElementById("services").style.display = "none";
-	document.getElementById("iot_desc").style.display = "block";
+
+function web_card_click() {
+	if( $("#web_long").css('display') == 'block') {
+		document.getElementById("web_long").style.display = 'none';
+		document.getElementById("digital_long").style.display = 'none';
+		document.getElementById("mobile_long").style.display = 'none';
+		document.getElementById("design_long").style.display = 'none';
+		document.getElementById("web_card").style.display = 'none';
+		document.getElementById("digital_card").style.display = 'none';
+		document.getElementById("mobile_card").style.display = 'none';
+		document.getElementById("design_card").style.display = 'none';
+		document.getElementById("web_short").style.display = 'block';
+		document.getElementById("digital_short").style.display = 'block';
+		document.getElementById("mobile_short").style.display = 'block';
+		document.getElementById("design_short").style.display = 'block';
+		document.getElementById("iot_short").style.display = 'block';
+	}
+	else {
+		webFunction()
+	}
+}
+
+function digital_card_click() {
+	if( $("#digital_long").css('display') == 'block') {
+		document.getElementById("web_long").style.display = 'none';
+		document.getElementById("digital_long").style.display = 'none';
+		document.getElementById("mobile_long").style.display = 'none';
+		document.getElementById("design_long").style.display = 'none';
+		document.getElementById("web_card").style.display = 'none';
+		document.getElementById("digital_card").style.display = 'none';
+		document.getElementById("mobile_card").style.display = 'none';
+		document.getElementById("design_card").style.display = 'none';
+		document.getElementById("web_short").style.display = 'block';
+		document.getElementById("digital_short").style.display = 'block';
+		document.getElementById("mobile_short").style.display = 'block';
+		document.getElementById("design_short").style.display = 'block';
+		document.getElementById("iot_short").style.display = 'block';
+	}
+	else {
+		digitalFunction()
+	}
+}
+
+function mobile_card_click() {
+	if( $("#mobile_long").css('display') == 'block') {
+		document.getElementById("web_long").style.display = 'none';
+		document.getElementById("digital_long").style.display = 'none';
+		document.getElementById("mobile_long").style.display = 'none';
+		document.getElementById("design_long").style.display = 'none';
+		document.getElementById("web_card").style.display = 'none';
+		document.getElementById("digital_card").style.display = 'none';
+		document.getElementById("mobile_card").style.display = 'none';
+		document.getElementById("design_card").style.display = 'none';
+		document.getElementById("web_short").style.display = 'block';
+		document.getElementById("digital_short").style.display = 'block';
+		document.getElementById("mobile_short").style.display = 'block';
+		document.getElementById("design_short").style.display = 'block';
+		document.getElementById("iot_short").style.display = 'block';
+	}
+	else {
+		mobileFunction()
+	}
+}
+
+function design_card_click() {
+	if( $("#design_long").css('display') == 'block') {
+		document.getElementById("web_long").style.display = 'none';
+		document.getElementById("digital_long").style.display = 'none';
+		document.getElementById("mobile_long").style.display = 'none';
+		document.getElementById("design_long").style.display = 'none';
+		document.getElementById("web_card").style.display = 'none';
+		document.getElementById("digital_card").style.display = 'none';
+		document.getElementById("mobile_card").style.display = 'none';
+		document.getElementById("design_card").style.display = 'none';
+		document.getElementById("web_short").style.display = 'block';
+		document.getElementById("digital_short").style.display = 'block';
+		document.getElementById("mobile_short").style.display = 'block';
+		document.getElementById("design_short").style.display = 'block';
+		document.getElementById("iot_short").style.display = 'block';
+	}
+	else {
+		designFunction()
+	}
 }
