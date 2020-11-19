@@ -456,7 +456,7 @@ $(function() {
 });
 
 function webFunction() {
-	if(window.innerWidth >= '1400px') {
+	// if(window.innerWidth >= '1200px') {
 		document.getElementById("web_short").style.display = 'none';
 		document.getElementById("digital_short").style.display = 'none';
 		document.getElementById("mobile_short").style.display = 'none';
@@ -474,12 +474,12 @@ function webFunction() {
 		document.getElementById("digital_icon_bg").style.background = '#262626';
 		document.getElementById("mobile_icon_bg").style.background = '#262626';
 		document.getElementById("design_icon_bg").style.background = '#262626';
-	}
+	// }
 	
 }
 
 function digitalFunction() {
-	if(window.innerWidth >= '1400px') {
+	// if(window.innerWidth >= '1200px') {
 
 		document.getElementById("web_short").style.display = 'none';
 		document.getElementById("digital_short").style.display = 'none';
@@ -498,12 +498,12 @@ function digitalFunction() {
 		document.getElementById("web_icon_bg").style.background = '#262626';
 		document.getElementById("mobile_icon_bg").style.background = '#262626';
 		document.getElementById("design_icon_bg").style.background = '#262626';
-	}
+	// }
 
 }
 
 function mobileFunction() {
-	if(window.innerWidth >= '1400px') {
+	// if(window.innerWidth >= '1200px') {
 
 		document.getElementById("web_short").style.display = 'none';
 		document.getElementById("digital_short").style.display = 'none';
@@ -522,12 +522,12 @@ function mobileFunction() {
 		document.getElementById("digital_icon_bg").style.background = '#262626';
 		document.getElementById("web_icon_bg").style.background = '#262626';
 		document.getElementById("design_icon_bg").style.background = '#262626';
-	}
+	// }
 
 }
 
 function designFunction() {
-	if(window.innerWidth >= '1400px') {
+	// if(window.innerWidth >= '1200px') {
 	
 		document.getElementById("web_short").style.display = 'none';
 		document.getElementById("digital_short").style.display = 'none';
@@ -546,7 +546,7 @@ function designFunction() {
 		document.getElementById("digital_icon_bg").style.background = '#262626';
 		document.getElementById("mobile_icon_bg").style.background = '#262626';
 		document.getElementById("web_icon_bg").style.background = '#262626';
-	}
+	// }
 }
 
 
