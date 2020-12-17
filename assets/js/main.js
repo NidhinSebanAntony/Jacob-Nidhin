@@ -470,6 +470,7 @@ function webFunction() {
 		document.getElementById("digital_card").style.display = 'block';
 		document.getElementById("mobile_card").style.display = 'block';
 		document.getElementById("design_card").style.display = 'block';
+		document.getElementById("go_back_btn").style.display = 'block';
 		document.getElementById("web_icon_bg").style.background = '#ef0d33';
 		document.getElementById("digital_icon_bg").style.background = '#262626';
 		document.getElementById("mobile_icon_bg").style.background = '#262626';
@@ -494,6 +495,7 @@ function digitalFunction() {
 		document.getElementById("digital_card").style.display = 'block';
 		document.getElementById("mobile_card").style.display = 'block';
 		document.getElementById("design_card").style.display = 'block';
+		document.getElementById("go_back_btn").style.display = 'block';
 		document.getElementById("digital_icon_bg").style.background = '#ef0d33';
 		document.getElementById("web_icon_bg").style.background = '#262626';
 		document.getElementById("mobile_icon_bg").style.background = '#262626';
@@ -518,6 +520,7 @@ function mobileFunction() {
 		document.getElementById("digital_card").style.display = 'block';
 		document.getElementById("mobile_card").style.display = 'block';
 		document.getElementById("design_card").style.display = 'block';
+		document.getElementById("go_back_btn").style.display = 'block';
 		document.getElementById("mobile_icon_bg").style.background = '#ef0d33';
 		document.getElementById("digital_icon_bg").style.background = '#262626';
 		document.getElementById("web_icon_bg").style.background = '#262626';
@@ -542,6 +545,7 @@ function designFunction() {
 		document.getElementById("digital_card").style.display = 'block';
 		document.getElementById("mobile_card").style.display = 'block';
 		document.getElementById("design_card").style.display = 'block';
+		document.getElementById("go_back_btn").style.display = 'block';
 		document.getElementById("design_icon_bg").style.background = '#ef0d33';
 		document.getElementById("digital_icon_bg").style.background = '#262626';
 		document.getElementById("mobile_icon_bg").style.background = '#262626';
@@ -632,6 +636,22 @@ function design_card_click() {
 	else {
 		designFunction()
 	}
+}
+
+function go_back_btn_click() {
+		document.getElementById("web_long").style.display = 'none';
+		document.getElementById("digital_long").style.display = 'none';
+		document.getElementById("mobile_long").style.display = 'none';
+		document.getElementById("design_long").style.display = 'none';
+		document.getElementById("web_card").style.display = 'none';
+		document.getElementById("digital_card").style.display = 'none';
+		document.getElementById("mobile_card").style.display = 'none';
+		document.getElementById("design_card").style.display = 'none';
+		document.getElementById("web_short").style.display = 'block';
+		document.getElementById("digital_short").style.display = 'block';
+		document.getElementById("mobile_short").style.display = 'block';
+		document.getElementById("design_short").style.display = 'block';
+		document.getElementById("iot_short").style.display = 'block';
 }
 
 

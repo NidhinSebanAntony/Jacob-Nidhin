@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <title>Digital | Business | Solutions</title>
-
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
 		<!-- fonts -->
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,600,700%7COswald:300,400,500,600,700" rel="stylesheet" type="text/css">
 		
@@ -17,8 +17,8 @@
 	<body class="loader">
 		<!-- loading start -->
 		<div class="loading">
-			<h2 class="logo-loading" style="color: #fff; text-align: center;">DTL</h2>
-		    <!-- <img class="logo-loading" src="assets/images/logo/logo-loader.png" alt="logo"> -->
+			<img class="logo-loading" src="assets/images/resources/Asset 1.png" alt="logo">
+			<!-- <h2 class="logo-loading" style="color: #fff; text-align: center;">DTL</h2> -->
 	    </div><!-- loading end -->
 	    
 		<!-- pointer start -->
@@ -71,7 +71,7 @@
 			<ul class="nav-menu dark-bg-1">
 				<!-- nav-box start -->
 				<li class="nav-box nav-bg-change active dropdown-open">
-					<a class="pointer-large nav-link" href="#up">
+					<a class="pointer-large nav-link" href="#upzx">
 						<span class="nav-btn active" data-text="Home">Home</span>
 					</a>
 					<div class="nav-bg" style="background-image: url(assets/images/resources/home1.jpg);"></div>
@@ -129,7 +129,7 @@
 		<!-- animsition-overlay start -->
 		<main class="animsition-overlay" data-animsition-overlay="true">
 			<!-- home-slider start -->
-			<section class="home-slider" id="up">
+			<section class="home-slider" id="upzx">
 				<!-- swiper-wrapper start -->
 			  	<div class="swiper-wrapper">
 				  	<!-- swiper-slide start -->
@@ -375,17 +375,17 @@
 						</div><!-- column end -->
 						<!-- column start -->
 						<div class="four-columns bottom-padding-60" style="text-align: center; " id="iot_short" >
-							<span data-animation-container href="#" class="content-left-right-margin-10 hover-box pointer-large d-block light-bg-2">
-								<div data-animation-child class="overlay-anim-box2 overlay-dark-bg-2 expertise-img-box" data-animation="overlay-anim2" style="padding-top: 20px;">
-									<img class="hover-img" src="assets/images/resources/iot service.svg" alt="iot" style="width: 100px;">
+							<span data-animation-container href="#" class="content-left-right-margin-10 hover-box pointer-large d-block red-bg">
+								<div data-animation-child class=" expertise-img-box" data-animation="overlay-anim2" style="padding-top: 20px;">
+									<!-- <img class="hover-img" src="assets/images/resources/iot service.svg" alt="iot" style="width: 100px;"> -->
 								</div>
 								<div class="expertise content-padding-l-r-20 content-padding-bottom-20" id="iot_list">
-									<h3 data-animation-child class="small-title-oswald text-color-1 hover-content fade-anim-box tr-delay01" data-animation="fade-anim">IoT</h3><br>
-									<p data-animation-child class="p-style-xsmall text-color-1 hover-content fade-anim-box tr-delay02" data-animation="fade-anim">React JS</p><br />
-									<p data-animation-child class="p-style-xsmall text-color-1 hover-content fade-anim-box tr-delay02" data-animation="fade-anim">Node JS</p><br />
-									<p data-animation-child class="p-style-xsmall text-color-1 hover-content fade-anim-box tr-delay02" data-animation="fade-anim">Vue JS</p><br />
-									<p data-animation-child class="p-style-xsmall text-color-1 hover-content fade-anim-box tr-delay02" data-animation="fade-anim">PHP</p><br />
-									<p data-animation-child class="p-style-xsmall text-color-1 hover-content fade-anim-box tr-delay02" data-animation="fade-anim">PHP</p>
+									<!-- <h3 data-animation-child class="small-title-oswald text-color-1 hover-content fade-anim-box tr-delay01" data-animation="fade-anim">IoT</h3><br> -->
+									<div class="text-center top-bottom-padding-120 red-bg" data-midnight="black">	
+										<a href="#" class="pointer-large overlay-btn-box">
+											<span class="overlay-btn" data-text="More">Loading...</span>
+										</a>
+									</div>
 								</div>
 							</span>
 						</div><!-- column end -->
@@ -606,9 +606,11 @@
 									</div>
 								</span>
 							</div>
-							
-						</div>
+							<button type="button" class="btn btn-light" style="width: 100px;" id="go_back_btn" onclick="go_back_btn_click()">
+								<img src="assets/images/resources/back-hand-drawn-arrow.svg" width="40px"/>
+							</button>
 
+						</div>
 					</div>
 					<div class="flex-container response-999 top-padding-60 top-bottom-padding-120 red-bg" data-midnight="black">	
 						<div class="six-columns text-center line" >
@@ -631,7 +633,7 @@
 							</div>
 							<div class="border-btn-box border-btn-black pointer-large">
 								<div class="border-btn-inner">
-									  <a href="#" class="border-btn" data-text="Careers">Careers</a>
+									  <a data-bs-toggle="modal" data-bs-target="#careerModal" class="border-btn" data-text="Careers">Careers</a>
 								</div>
 							</div>
 						</div>
@@ -686,12 +688,12 @@
 								</ul>
                                 <div class="border-btn-box border-btn-black pointer-large" style="margin-bottom: 10px;">
 									<div class="border-btn-inner" style="padding-left: 12px; padding-right: 12px;">
-										  <a href="#" class="border-btn" data-text="Know More">Know More</a>
+										  <a data-bs-toggle="modal" data-bs-target="#customKnowModal" class="border-btn" data-text="Know More">Know More</a>
 									</div>
 								</div>
 								<div class="border-btn-box border-btn-black pointer-large">
 									<div class="border-btn-inner">
-										  <a href="#" class="border-btn" data-text="Get in Touch">Get in Touch</a>
+										  <a data-bs-toggle="modal" data-bs-target="#customGetModal" class="border-btn" data-text="Get in Touch">Get in Touch</a>
 									</div>
 								</div>
 							</div>
@@ -729,12 +731,12 @@
 								</ul>
 								<div class="border-btn-box border-btn-black pointer-large" style="margin-bottom: 10px;">
 									<div class="border-btn-inner" style="padding-left: 12px; padding-right: 12px;">
-										  <a href="#" class="border-btn" data-text="Know More">Know More</a>
+										  <a data-bs-toggle="modal" data-bs-target="#eduKnowModal" class="border-btn" data-text="Know More">Know More</a>
 									</div>
 								</div>
 								<div class="border-btn-box border-btn-black pointer-large">
 									<div class="border-btn-inner">
-										  <a href="#" class="border-btn" data-text="Get in Touch">Get in Touch</a>
+										  <a data-bs-toggle="modal" data-bs-target="#eduGetModal" class="border-btn" data-text="Get in Touch">Get in Touch</a>
 									</div>
 								</div>
 							</div>
@@ -772,12 +774,12 @@
 								</ul>
 								<div class="border-btn-box border-btn-black pointer-large" style="margin-bottom: 10px;">
 									<div class="border-btn-inner" style="padding-left: 12px; padding-right: 12px;">
-										  <a href="#" class="border-btn" data-text="Know More">Know More</a>
+										  <a data-bs-toggle="modal" data-bs-target="#orgKnowModal" class="border-btn" data-text="Know More">Know More</a>
 									</div>
 								</div>
 								<div class="border-btn-box border-btn-black pointer-large">
 									<div class="border-btn-inner">
-										  <a href="#" class="border-btn" data-text="Get in Touch">Get in Touch</a>
+										  <a data-bs-toggle="modal" data-bs-target="#orgGetModal" class="border-btn" data-text="Get in Touch">Get in Touch</a>
 									</div>
 								</div>
 							</div>
@@ -1174,8 +1176,242 @@
 				</div><!-- column end -->
 			</div><!-- flex-container end -->
 		</footer><!-- footer end -->
-		
+			<!--Career Modal -->
+				<div class="modal fade" id="careerModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+					<div class="modal-dialog modal-dialog-centered">
+					<div class="modal-content">
+						<div class="modal-header">
+						<h5 class="modal-title" id="exampleModalLabel">Careers</h5>
+						<!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+						</div>
+						<div class="modal-body">
+							<div class="mb-3">
+								<div class="mb-3">
+									<label >Email Address</label>
+								</div>
+								<input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+							</div>
+							<div class="mb-3">
+								<div class="mb-3">
+									<label >Description</label>
+								</div>
+								<textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+							</div>
+							<div class="mb-3">
+								<label >Upload Your Resume</label>
+							</div>
+							<div class="input-group mb-3">
+								<input type="file" class="form-control" id="inputGroupFile02">
+							</div>
+						</div>
+						<div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+						<button type="button" class="btn btn-primary">Send</button>
+						</div>
+					</div>
+					</div>
+				</div>
+			<!--Career Modal Ends-->
+			<!--Custom Know Modal -->
+				<div class="modal fade" id="customKnowModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+					<div class="modal-dialog modal-dialog-centered">
+					<div class="modal-content">
+						<div class="modal-header">
+						<h5 class="modal-title" id="exampleModalLabel">Custom Cart</h5>
+						<!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+						</div>
+						<div class="modal-body">
+							<p>
+								Contrary to popular belief, Lorem Ipsum is not simply random text. 
+								It has roots in a piece of classical Latin literature from 45 BC, 
+								making it over 2000 years old. Richard McClintock, a Latin professor 
+								at Hampden-Sydney College in Virginia, looked up one of the more obscure 
+								Latin words, consectetur, from a Lorem Ipsum passage, and going through 
+								the cites of the word in classical literature, discovered the undoubtable source. 
+								Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" 
+								(The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise 
+								on the theory of ethics, very popular during the Renaissance. The first line of Lorem 
+								Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+							</p>
+						</div>
+						<div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+						<button type="button" class="btn btn-primary">Get in Touch</button>
+						</div>
+					</div>
+					</div>
+				</div>
+			<!--Custom Know Modal Ends-->
+			<!--Edu Know Modal -->
+				<div class="modal fade" id="eduKnowModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+					<div class="modal-dialog modal-dialog-centered">
+					<div class="modal-content">
+						<div class="modal-header">
+						<h5 class="modal-title" id="exampleModalLabel">Edu Platform App</h5>
+						<!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+						</div>
+						<div class="modal-body">
+							<p>
+								Contrary to popular belief, Lorem Ipsum is not simply random text. 
+								It has roots in a piece of classical Latin literature from 45 BC, 
+								making it over 2000 years old. Richard McClintock, a Latin professor 
+								at Hampden-Sydney College in Virginia, looked up one of the more obscure 
+								Latin words, consectetur, from a Lorem Ipsum passage, and going through 
+								the cites of the word in classical literature, discovered the undoubtable source. 
+								Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" 
+								(The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise 
+								on the theory of ethics, very popular during the Renaissance. The first line of Lorem 
+								Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+							</p>
+						</div>
+						<div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+						<button type="button" class="btn btn-primary">Get in Touch</button>
+						</div>
+					</div>
+					</div>
+				</div>
+			<!--Edu Know Modal Ends-->
+			<!--Org Know Modal -->
+				<div class="modal fade" id="orgKnowModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+					<div class="modal-dialog modal-dialog-centered">
+					<div class="modal-content">
+						<div class="modal-header">
+						<h5 class="modal-title" id="exampleModalLabel">Organization App</h5>
+						<!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+						</div>
+						<div class="modal-body">
+							<p>
+								Contrary to popular belief, Lorem Ipsum is not simply random text. 
+								It has roots in a piece of classical Latin literature from 45 BC, 
+								making it over 2000 years old. Richard McClintock, a Latin professor 
+								at Hampden-Sydney College in Virginia, looked up one of the more obscure 
+								Latin words, consectetur, from a Lorem Ipsum passage, and going through 
+								the cites of the word in classical literature, discovered the undoubtable source. 
+								Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" 
+								(The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise 
+								on the theory of ethics, very popular during the Renaissance. The first line of Lorem 
+								Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+							</p>
+						</div>
+						<div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+						<button type="button" class="btn btn-primary">Get in Touch</button>
+						</div>
+					</div>
+					</div>
+				</div>
+			<!--Org know Modal Ends-->
+			<!--Custom get Modal -->
+				<div class="modal fade" id="customGetModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+					<div class="modal-dialog modal-dialog-centered">
+					<div class="modal-content">
+						<div class="modal-header">
+						<h5 class="modal-title" id="exampleModalLabel">Custom Cart App</h5>
+						<!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+						</div>
+						<div class="modal-body">
+							<div class="mb-3">
+								<div class="mb-3">
+									<label >Email Address</label>
+								</div>
+								<input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+							</div>
+							<div class="mb-3">
+								<div class="mb-3">
+									<label>Subject</label>
+								</div>
+								<input class="form-control" type="text" value="Enquire about Custom Cart App" aria-label="default input example">
+							</div>
+							<div class="mb-3">
+								<div class="mb-3">
+									<label >Description</label>
+								</div>
+								<textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+							</div>
+						</div>
+						<div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+						<button type="button" class="btn btn-primary">Send</button>
+						</div>
+					</div>
+					</div>
+				</div>
+			<!--Custom Get Modal Ends-->
+			<!--Edu Get Modal -->
+			<div class="modal fade" id="eduGetModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+				<div class="modal-dialog modal-dialog-centered">
+				<div class="modal-content">
+					<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">Edu Platform App</h5>
+					<!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+					</div>
+					<div class="modal-body">
+						<div class="mb-3">
+							<div class="mb-3">
+								<label >Email Address</label>
+							</div>
+							<input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+						</div>
+						<div class="mb-3">
+							<div class="mb-3">
+								<label>Subject</label>
+							</div>
+							<input class="form-control" type="text" value="Enquire about Education Platform App" aria-label="default input example">
+						</div>
+						<div class="mb-3">
+							<div class="mb-3">
+								<label >Description</label>
+							</div>
+							<textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+						</div>
+					</div>
+					<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+					<button type="button" class="btn btn-primary">Send</button>
+					</div>
+				</div>
+				</div>
+			</div>
+			<!--Edu Get Modal Ends-->
+			<!--Org Get Modal -->
+			<div class="modal fade" id="orgGetModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+				<div class="modal-dialog modal-dialog-centered">
+				<div class="modal-content">
+					<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">Organization App</h5>
+					<!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+					</div>
+					<div class="modal-body">
+						<div class="mb-3">
+							<div class="mb-3">
+								<label >Email Address</label>
+							</div>
+							<input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+						</div>
+						<div class="mb-3">
+							<div class="mb-3">
+								<label>Subject</label>
+							</div>
+							<input class="form-control" type="text" value="Enquire about Organisation App" aria-label="default input example">
+						</div>
+						<div class="mb-3">
+							<div class="mb-3">
+								<label >Description</label>
+							</div>
+							<textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+						</div>
+					</div>
+					<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+					<button type="button" class="btn btn-primary">Send</button>
+					</div>
+				</div>
+				</div>
+			</div>
+		<!--Org Get Modal Ends-->
 		<!-- scripts --> 
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
         <script src="assets/js/plugins.js"></script> 
         <script src="assets/js/main.js"></script>
 	</body>

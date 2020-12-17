@@ -144,6 +144,10 @@
 	display: none;
 }
 
+#go_back_btn {
+	display: none;
+}
+
 .line {
 	border-right: .5px solid #262626;
 }
@@ -9338,7 +9342,7 @@ textarea.form-input {
 }
 
 .price-list li:before {
-	content: "";
+	/* content: ""; */
 	width: 6px;
 	height: 3px;
 	border-bottom: 2px solid #ef0d33;
