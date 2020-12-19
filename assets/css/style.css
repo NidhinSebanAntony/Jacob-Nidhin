@@ -114,6 +114,8 @@
 ********************************************************/
 /*******************************************************/
 
+
+
 #web_long {
 	display: none;
 }
@@ -2078,6 +2080,7 @@ body.active .menu-open:before {
 }
 
 .nav-container.active {
+	
 	-webkit-transform: translateX(-100%);
 	    -ms-transform: translateX(-100%);
 	        transform: translateX(-100%);
@@ -2538,7 +2541,7 @@ body.out .nav-container.active li li:nth-last-child(12) a {
 	width: 0%;
 	white-space: nowrap;
 	overflow: hidden;
-	background: #111517;
+	/* background: #111517; */
 }
 
 .nav-btn.active:before {

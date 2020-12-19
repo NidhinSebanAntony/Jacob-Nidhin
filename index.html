@@ -34,22 +34,74 @@
 		</a><!-- to-top-btn end -->
 	    
 	    <!-- header start -->
-	    <header class="fixed-header">
+	    <header class="fixed-header" id="abc-xyz">
 		    <!-- header-flex-box start -->
-			<div class="header-flex-box">
+			<div class="header-flex-box" style="display: flex; align-items: center;">
 			    <!-- logo start -->
 				<a href="index.html" class="logo pointer-large animsition-link">
 					<div class="logo-img-box">
-						<h2 class="logo-white" style="color: #fff; text-align: center;">DAT TECH LABS</h2>
+						<h2 style="color: #fff;padding-bottom: 10px;">DAT TECH LABS</h2>
 				        <!-- <img class="logo-white" src="assets/images/logo/logo-white.png" alt="logo"> -->
 				        <!-- <img class="logo-black" src="assets/images/logo/logo-black.png" alt="logo"> -->
 			        </div>
 		        </a><!-- logo end -->
 		        
 				<!-- menu-open start -->	
-				<div class="menu-open pointer-large">
+				<!-- <div class="menu-open pointer-large">
 					<span class="hamburger"></span>
-				</div><!-- menu-open end -->
+				</div> -->
+				<ul style="display: flex;" >
+					<li class=" nav-bg-change ">
+						<a class="pointer-large nav-link" href="#home">
+							<span class="nav-btn" data-text="Home" style="font-size: 14px; margin-top: 20px;">Home</span>
+						</a>
+						
+						<div class="nav-bg" ></div>
+					</li>
+					<li class=" nav-bg-change ">
+						<a class="pointer-large nav-link" href="#services">
+							<span class="nav-btn" data-text="Services" style="font-size: 14px; margin-top: 20px;">Services</span>
+						</a>
+						
+						<div class="nav-bg" style="background-image: url(assets/images/backgrounds/beautiful-black-close-up-1689731.jpg);"></div>
+					</li>
+					<li class=" nav-bg-change ">
+						<a class="pointer-large nav-link" href="#careers">
+							<span class="nav-btn" data-text="Careers" style="font-size: 14px; margin-top: 20px;">Careers</span>
+						</a>
+						
+						<div class="nav-bg" style="background-image: url(assets/images/backgrounds/beautiful-black-close-up-1689731.jpg);"></div>
+					</li>
+					<li class=" nav-bg-change ">
+						<a class="pointer-large nav-link" href="#products">
+							<span class="nav-btn" data-text="Products" style="font-size: 14px; margin-top: 20px;">Products</span>
+						</a>
+						
+						<div class="nav-bg"></div>
+					</li>
+					<li class=" nav-bg-change ">
+						<a class="pointer-large nav-link" href="about">
+							<span class="nav-btn" data-text="About" style="font-size: 14px; margin-top: 20px;">About</span>
+						</a>
+						
+						<div class="nav-bg"></div>
+					</li>
+					<li class=" nav-bg-change ">
+						<a class="pointer-large nav-link" href="blog">
+							<span class="nav-btn" data-text="Blog" style="font-size: 14px; margin-top: 20px;">Blog</span>
+						</a>
+						
+						<div class="nav-bg"></div>
+					</li>
+					<li class=" nav-bg-change ">
+						<a class="pointer-large nav-link" href="contact">
+							<span class="nav-btn" data-text="Contact" style="font-size: 14px; margin-top: 20px;">Contact</span>
+						</a>
+						
+						<div class="nav-bg"></div>
+					</li>
+				</ul>
+				<!-- menu-open end -->
 		    </div><!-- header-flex-box end -->
 		</header><!-- header end -->
 		
@@ -91,15 +143,16 @@
 					<div class="nav-bg" style="background-image: url(assets/images/backgrounds/bald-casual-facial-hair-1708528.jpg);"></div>
 				</li><!-- nav-box end -->
 				<!-- nav-box start -->
-				<li class="nav-box nav-bg-change dropdown-open">
+				<li class="nav-box nav-bg-change ">
 					<a class="pointer-large nav-link">
 						<span class="nav-btn" data-text="Products">Products</span>
 					</a>
 					
-					<div class="nav-bg" style="background-image: url(assets/images/backgrounds/art-artistic-artsy-1988681.jpg);"></div>
+					<div class="nav-bg" style="background-image: url(assets/images/backgrounds/beautiful-black-close-up-1689731.jpg);"></div>
 				</li><!-- nav-box end -->
+
 				<!-- nav-box start -->
-				<li class="nav-box nav-bg-change dropdown-open">
+				<li class="nav-box nav-bg-change ">
 					<a class="pointer-large nav-link">
 						<span class="nav-btn" data-text="Careers">Careers</span>
 					</a>
@@ -108,7 +161,7 @@
 				</li><!-- nav-box end -->
 
 				<!-- nav-box start -->
-				<li class="nav-box nav-bg-change dropdown-open">
+				<li class="nav-box nav-bg-change ">
 					<a class="pointer-large nav-link">
 						<span class="nav-btn" data-text="Blog">Blog</span>
 					</a>
@@ -129,7 +182,7 @@
 		<!-- animsition-overlay start -->
 		<main class="animsition-overlay" data-animsition-overlay="true">
 			<!-- home-slider start -->
-			<section class="home-slider" id="upzx">
+			<section class="home-slider" id="home">
 				<!-- swiper-wrapper start -->
 			  	<div class="swiper-wrapper">
 				  	<!-- swiper-slide start -->
@@ -612,7 +665,7 @@
 
 						</div>
 					</div>
-					<div class="flex-container response-999 top-padding-60 top-bottom-padding-120 red-bg" data-midnight="black">	
+					<div class="flex-container response-999 top-padding-60 top-bottom-padding-120 red-bg" data-midnight="black" id="careers">	
 						<div class="six-columns text-center line" >
 							<div class="pricing-title">
 								<h3 class="small-title-oswald text-color-0">
@@ -643,7 +696,7 @@
 
 			
 			<!-- price-table start -->
-			<section class="price-table top-padding-120 bottom-padding-30 light-bg-1" data-midnight="black">
+			<section class="price-table top-padding-120 bottom-padding-30 light-bg-1" data-midnight="black" id="products">
 				<!-- container start -->
 				<div class="container small">
 					<!-- text-center start -->
@@ -837,7 +890,7 @@
 			</section> -->
 			<!-- section end -->
 			<!-- flex-min-height-box start -->
-			<section id="down" class="dark-bg-1 flex-min-height-box">
+			<section id="down" class="dark-bg-1 flex-min-height-box" id="about">
 				<!-- flex-min-height-inner start -->
 				<div class="flex-min-height-inner">
 					<!-- container start -->
@@ -945,7 +998,7 @@
 			
 
 
-			<section id="down" class="dark-bg-1 flex-min-height-box">
+			<section class="dark-bg-1 flex-min-height-box" id="contact">
 				<!-- flex-min-height-inner start -->
 				<div class="flex-min-height-inner">
 					<!-- container start -->

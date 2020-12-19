@@ -16,6 +16,16 @@
   15. Progress bar
   16. Contact form
 ********************************************************/
+$(function() {
+    $(window).on("scroll", function() {
+        if($(window).scrollTop() > 50) {
+            document.getElementById('abc-xyz').style.background="#262626"
+        } else {
+            //remove the background property so it comes transparent again (defined in your css)
+            document.getElementById('abc-xyz').style.background="none"
+		}
+    });
+});
 
 $(function() {
     "use strict";
@@ -569,6 +579,7 @@ function web_card_click() {
 		document.getElementById("mobile_short").style.display = 'block';
 		document.getElementById("design_short").style.display = 'block';
 		document.getElementById("iot_short").style.display = 'block';
+		document.getElementById("go_back_btn").style.display = 'none';
 	}
 	else {
 		webFunction()
@@ -590,6 +601,7 @@ function digital_card_click() {
 		document.getElementById("mobile_short").style.display = 'block';
 		document.getElementById("design_short").style.display = 'block';
 		document.getElementById("iot_short").style.display = 'block';
+		document.getElementById("go_back_btn").style.display = 'none';
 	}
 	else {
 		digitalFunction()
@@ -611,6 +623,7 @@ function mobile_card_click() {
 		document.getElementById("mobile_short").style.display = 'block';
 		document.getElementById("design_short").style.display = 'block';
 		document.getElementById("iot_short").style.display = 'block';
+		document.getElementById("go_back_btn").style.display = 'none';
 	}
 	else {
 		mobileFunction()
@@ -632,6 +645,7 @@ function design_card_click() {
 		document.getElementById("mobile_short").style.display = 'block';
 		document.getElementById("design_short").style.display = 'block';
 		document.getElementById("iot_short").style.display = 'block';
+		document.getElementById("go_back_btn").style.display = 'none';
 	}
 	else {
 		designFunction()
@@ -647,11 +661,14 @@ function go_back_btn_click() {
 		document.getElementById("digital_card").style.display = 'none';
 		document.getElementById("mobile_card").style.display = 'none';
 		document.getElementById("design_card").style.display = 'none';
+		document.getElementById("go_back_btn").style.display = 'none';
 		document.getElementById("web_short").style.display = 'block';
 		document.getElementById("digital_short").style.display = 'block';
 		document.getElementById("mobile_short").style.display = 'block';
 		document.getElementById("design_short").style.display = 'block';
 		document.getElementById("iot_short").style.display = 'block';
 }
+
+
 
 
