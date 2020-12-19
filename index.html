@@ -17,7 +17,7 @@
 	<body class="loader">
 		<!-- loading start -->
 		<div class="loading">
-			<img class="logo-loading" src="assets/images/resources/Asset 1.png" alt="logo">
+			<img class="logo-loading" src="assets/images/resources/logo.png" alt="logo">
 			<!-- <h2 class="logo-loading" style="color: #fff; text-align: center;">DTL</h2> -->
 	    </div><!-- loading end -->
 	    
@@ -188,7 +188,14 @@
 				  	<!-- swiper-slide start -->
 				  	<div class="swiper-slide flex-min-height-box home-slide">
 					  	<!-- slide-bg -->
-				      	<div class="slide-bg overlay-loading2 overlay-dark-bg-1" style="background-image:url(assets/images/resources/slider1.jpg)"></div>
+						<div class="slide-bg overlay-loading2 overlay-dark-bg-1" style="background: #000000">
+							<div style="display: flex; justify-content: center; align-items: center; height: 100vh; flex-direction: column;">
+								<img src="./assets/images/resources/logo.png"  style="width: 150px;"/>
+								<h2 class="large-title-bold">
+									<span style="color: #fff;" data-text="DAT TECH LABS">DAT TECH LAB</span><br>
+								</h2>
+							</div>
+						</div>
 				      	<!-- home-slider-content start -->
 					  	<div class="home-slider-content flex-min-height-inner dark-bg-1">
 						  	<!-- flex-container start -->
@@ -394,7 +401,7 @@
 						<div class="four-columns bottom-padding-60" style="text-align: center;" id="mobile_short" onclick="mobileFunction()">
 							<span data-animation-container href="#" class="content-left-margin-20 hover-box pointer-large d-block light-bg-2">
 								<div data-animation-child class="overlay-anim-box2 overlay-dark-bg-2 expertise-img-box" data-animation="overlay-anim2" style="padding-top: 20px;">
-									<img class="hover-img" src="assets/images/resources/mobile_development_service.svg" alt="Mobile Development" style="width: 90px;">
+									<img class="hover-img" src="assets/images/resources/mobile_development_service.svg" alt="Mobile Development" style="width: 100px;">
 								</div>
 								<div class="expertise content-padding-l-r-20 content-padding-bottom-20" id="mobile_list">
 									<h3 data-animation-child class="small-title-oswald text-color-1 hover-content fade-anim-box tr-delay01" data-animation="fade-anim">Mobile Development</h3><br>
@@ -428,15 +435,16 @@
 						</div><!-- column end -->
 						<!-- column start -->
 						<div class="four-columns bottom-padding-60" style="text-align: center; " id="iot_short" >
-							<span data-animation-container href="#" class="content-left-right-margin-10 hover-box pointer-large d-block red-bg">
+							<span data-animation-container href="#" class="content-left-right-margin-10 hover-box pointer-large d-block light-bg-2">
 								<div data-animation-child class=" expertise-img-box" data-animation="overlay-anim2" style="padding-top: 20px;">
-									<!-- <img class="hover-img" src="assets/images/resources/iot service.svg" alt="iot" style="width: 100px;"> -->
+									 <img class="hover-img" src="assets/images/resources/iot service.svg" alt="iot" style="width: 100px;"> 
 								</div>
-								<div class="expertise content-padding-l-r-20 content-padding-bottom-20" id="iot_list">
-									<!-- <h3 data-animation-child class="small-title-oswald text-color-1 hover-content fade-anim-box tr-delay01" data-animation="fade-anim">IoT</h3><br> -->
-									<div class="text-center top-bottom-padding-120 red-bg" data-midnight="black">	
-										<a href="#" class="pointer-large overlay-btn-box">
-											<span class="overlay-btn" data-text="More">Loading...</span>
+								<div class="expertise content-padding-l-r-20 content-padding-bottom-60" id="iot_list">
+									<h3 data-animation-child class="small-title-oswald text-color-1 hover-content fade-anim-box tr-delay01" data-animation="fade-anim">IoT</h3><br>
+									<!-- <p data-animation-child class="p-style-xsmall text-color-1 hover-content fade-anim-box tr-delay02" data-animation="fade-anim">Loading</p><br /> -->
+									<div class="text-center " style="padding-top: 74px; padding-bottom: 74px;" data-midnight="black">	
+										<a href="#" class="pointer-large overlay-btn-box"> 
+											 <span class="overlay-btn" data-text="More">Loading...</span>
 										</a>
 									</div>
 								</div>
